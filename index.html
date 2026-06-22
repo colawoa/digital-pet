@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My HTML Tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game">
+    <button id="helpBtn" onclick="toggleHelp()">▼ Help</button>
+    <h1>🐣 My Pet</h1>
+    <p id="hatchText">👆 Click the egg to hatch!</p>
+    <img id="pet" src="images/egg1.png" alt="Pet">
+
+    <p>Hunger: <span id="hunger">100</span></p>
+    <p>Happiness: <span id="happy">100</span></p>
+    <p>Energy: <span id="energy">100</span></p>
+    <p>Points: <span id="points">0</span></p>
+
+
+<div id="helpBox">
+
+<h3>How To Play</h3>
+
+<p>
+Feed your angel to keep hunger high. <br><br>
+ - Candy gives 5 hunger and 3 happiness. <br><br>
+ - Pie gives 7 hunger. <br><br>
+ - Apple gives 10 hunger and 1 happiness. <br><br>
+ - Baby bottle gives 16 hunger and 5 energy. <br><br>
+
+Play the star game to increase happiness. Click the stars to make it go away. +25 happiness.<br><br>
+Earn points from playing the minigame and buy food. The numbers beside the food represents how much it is. <br><br>
+Let your angel sleep to recover energy. If accidentally pressed, click wake up. It needs fully 10 seconds of sleep to get 30 energy. <br><br>
+
+Try to keep all stats above 0!
+</p>
+
+</div>
+<div id="rpsGame" style="display:none; margin-bottom:20px;">
+
+    <h3>Rock Paper Scissors</h3>
+
+    <button onclick="chooseRPS('rock')">🪨</button>
+    <button onclick="chooseRPS('paper')">📄</button>
+    <button onclick="chooseRPS('scissors')">✂️</button>
+
+    <br><br>
+
+    <button onclick="closeRPS()">❌ End Game</button>
+
+    <p id="rpsResult"></p>
+
+</div>
+<div id="feedContainer">
+
+    <button onclick="toggleFoodMenu()">Feed</button>
+
+    <div id="foodMenu">
+        <button onclick="feedPet('candy')">🍬 Candy (3)</button>
+        <button onclick="feedPet('pie')">🥧 Pie (5)</button>
+        <button onclick="feedPet('apple')">🍎 Apple (7)</button>
+        <button onclick="feedPet('milk')">🍼 Baby Bottle (12)</button>
+    </div>
+
+</div>
+    <div id="playContainer">
+
+    <button onclick="togglePlayMenu()">Play</button>
+
+    <div id="playMenu">
+        <button onclick="playStars()">⭐ Catch Stars</button>
+        <button onclick="playRPS()">✂️ Rock Paper Scissors</button>
+    </div>
+
+</div>
+    <button onclick="sleepPet()">Sleep</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>

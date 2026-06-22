@@ -1,0 +1,172 @@
+body {
+    background-image: url("images/sky.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#game {
+    position: relative;
+    
+    width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+
+    background: rgba(255,255,255,0.9);
+
+    border: 4px solid black;
+    border-radius: 15px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#pet {
+    width: 140px;
+    height: auto;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+}
+#feedContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#foodMenu {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background: white;
+
+    border: 2px solid #ccc;
+    border-radius: 8px;
+
+    padding: 5px;
+
+    z-index: 100;
+}
+
+#foodMenu button {
+    display: block;
+
+    width: 160px;
+
+    margin: 3px 0;
+}
+.star {
+position: absolute;
+
+font-size: 30px;
+
+cursor: pointer;
+
+user-select: none;
+
+transition: transform 0.2s;
+
+
+}
+
+.star:hover {
+transform: scale(1.2);
+}
+#helpBox {
+
+    display: none;
+
+    width: 280px;
+
+    max-height: 180px;
+
+    overflow-y: auto;
+
+    margin: 10px auto;
+
+    padding: 10px;
+
+    background: white;
+
+    border: 2px solid #999;
+
+    border-radius: 10px;
+
+    text-align: left;
+
+    font-size: 14px;
+}
+#helpBox {
+
+    position: absolute;
+
+    top: 60px;
+    left: 15px;
+
+    width: 250px;
+
+    z-index: 999;
+}
+#helpBtn {
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    z-index: 1000;
+
+    padding: 6px 10px;
+
+    font-size: 14px;
+}
+#hatchText {
+    font-size: 14px;
+    color: #666;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+#playContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#playMenu {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background: white;
+
+    border: 2px solid #ccc;
+    border-radius: 8px;
+
+    padding: 5px;
+
+    z-index: 100;
+}
+
+#playMenu button {
+    display: block;
+
+    width: 180px;
+
+    margin: 3px 0;
+}
+#rpsGame {
+    margin-bottom: 20px;
+}
+
+#rpsGame h3 {
+    margin-bottom: 10px;
+}
