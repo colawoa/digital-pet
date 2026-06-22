@@ -406,7 +406,7 @@ function chooseRPS(playerChoice) {
 
     const result = document.getElementById("rpsResult");
 
-    result.textContent = "👼 Angel is thinking...";
+   
 
     const choices = ["rock", "paper", "scissors"];
 
