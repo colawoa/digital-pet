@@ -415,18 +415,18 @@ function chooseRPS(playerChoice) {
         const angelChoice =
             choices[Math.floor(Math.random() * 3)];
 
-        let angelEmoji = "🪨";
+        let angelImage = "images/rockhand.png";
 
-        if (angelChoice === "paper")
-            angelEmoji = "📄";
+if (angelChoice === "paper")
+    angelImage = "images/paperhand.png";
 
-        if (angelChoice === "scissors")
-            angelEmoji = "✂️";
-
+if (angelChoice === "scissors")
+    angelImage = "images/scissorhand.png";
         if (playerChoice === angelChoice) {
 
-            result.textContent =
-                `Angel chose ${angelEmoji} — It's a tie!`;
+            result.innerHTML =
+    `<img src="${angelImage}" width="60"><br>
+     It's a tie!`;
 
         } else if (
 
@@ -442,13 +442,15 @@ function chooseRPS(playerChoice) {
 
             updateScreen();
 
-            result.textContent =
-                `Angel chose ${angelEmoji} — You won! +15 Happiness +5 Points`;
+            result.innerHTML =
+    `<img src="${angelImage}" width="60"><br>
+     You won! +15 Happiness +5 Points`;
 
         } else {
 
-            result.textContent =
-                `Angel chose ${angelEmoji} — Angel Baby won! 👼`;
+            result.innerHTML =
+    `<img src="${angelImage}" width="60"><br>
+     Angel Baby won! 👼`;
 
         }
 
