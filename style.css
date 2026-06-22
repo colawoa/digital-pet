@@ -170,3 +170,18 @@ transform: scale(1.2);
 #rpsGame h3 {
     margin-bottom: 10px;
 }
+.rpsBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.rpsBtn img {
+    width: 70px;
+    height: auto;
+}
+
+.rpsBtn:hover {
+    transform: scale(1.1);
+}
